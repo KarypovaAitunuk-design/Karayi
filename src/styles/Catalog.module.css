@@ -1,0 +1,40 @@
+.bigFather{
+ display: flex;
+ gap: 16px;
+}
+.item{
+    color: #212121;
+}
+.father{
+}
+.img{
+  width: 283px;
+  height: 283.4px;
+  border-radius: 10px;
+}
+.h1{
+  color: #424242;
+  font-size: 22px;
+  font-weight: 700;
+}
+.h2{
+ color: #FFB30E;
+ font-size: 22px;
+ font-weight: 400;
+}
+.h3{
+color: #212121;
+}
+.button{
+ background-color: #F17228;
+ border: none;
+ color: white;
+ padding-top: 21px;
+ padding-bottom: 21px;
+ padding-left: 98px;
+ padding-right: 98px;
+ font-size: 18px;
+ font-weight: 800;
+ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+border-radius: 10px;
+}
