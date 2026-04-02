@@ -1,0 +1,34 @@
+.con{
+    display: flex;
+    justify-content: center;
+}
+
+.food{
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+}
+
+.img{
+    width: 283px;
+    height: 283px;
+    border-radius: 16px;
+}
+
+.name{
+    font-size: 22px;
+    font-weight: 700;
+    color: #424242;
+}
+
+.place{
+    font-size: 22px;
+    font-weight: 400;
+    color: #FFB30E;
+}
+
+.price{
+    font-size: 22px;
+    font-weight: 700;
+    color: #212121;
+}
