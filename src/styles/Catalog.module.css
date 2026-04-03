@@ -1,34 +1,82 @@
-.con{
+.main {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+    font-size: 43px;
+    font-weight: 700;
+    margin-bottom: 88px;
+    color: #212121;
+}
+
+.con {
     display: flex;
     justify-content: center;
+    gap: 25px;
 }
 
-.food{
+.food {
     display: flex;
-    align-items: baseline;
     flex-direction: column;
+    align-items: flex-start;
+    width: 283px;
+    transition: transform 0.2s ease;
+    margin: 8px 0;
 }
 
-.img{
+.food:hover {
+    transform: translateY(-5px); 
+}
+
+.img {
     width: 283px;
     height: 283px;
     border-radius: 16px;
+    object-fit: cover; 
+    margin-bottom: 16px;
 }
 
-.name{
-    font-size: 22px;
+.name {
+    font-size: 20px;
     font-weight: 700;
     color: #424242;
+    margin-bottom: 8px;
 }
 
-.place{
+.brand {
     font-size: 22px;
     font-weight: 400;
     color: #FFB30E;
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
 }
 
-.price{
+.price {
     font-size: 22px;
     font-weight: 700;
     color: #212121;
+    margin-bottom: 16px;
+}
+
+.orderBtn {
+    width: 100%;
+    background-color: #F17228;
+    color: #fff;
+    border: none;
+    padding: 16px;
+    border-radius: 8px;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(241, 114, 40, 0.3);
+    transition: background 0.3s ease;
+}
+
+.orderBtn:hover {
+    background-color: #d65d1a;
 }

@@ -1,22 +1,20 @@
-import React from 'react'
-import styles from "../styles/Catalog.module.css"
 import { food } from '../data'
+import styles from "../styles/Catalog.module.css"
 
 const Catalog = () => {
   return (
-    <div>
+    <div className={styles.main}>
+      <h2 className={styles.header}>Popular items</h2>
       <div className={styles.con}>
-        <p>Popular Items</p>
-        {/* <div><button></button> <button></button></div> */}
-          {food.map((item) => (
-            <div className={styles.food} key={item.id}>
-              <img className={styles.img} src={item.image} alt="" />
-              <p className={styles.name}>{item.name}</p>
-              <p className={styles.place}>{item.place}</p>
-              <p className={styles.price}>${item.price}</p>
-              <button>Order Now</button>
-            </div>
-          ))}
+        {food.map((item) => (
+          <div key={item.id} className={styles.food}>
+            <img className={styles.img} src={item.image} alt="" />
+            <h1 className={styles.name}>{item.name}</h1>
+            <h3 className={styles.brand}>📍 {item.place}</h3>
+            <p className={styles.price}>${item.price}</p>
+            <button className={styles.orderBtn}>Order Now</button>
+          </div>
+        ))}
       </div>
     </div>
   )
